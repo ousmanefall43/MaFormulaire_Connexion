@@ -1,0 +1,74 @@
+/* Réinitialise les marges et les padding par défaut, 
+   définit la police générale, la couleur de fond et centre le contenu */
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #008080; /* Couleur de fond turquoise */
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Hauteur de la vue pour centrer verticalement */
+}
+
+/* Style pour le conteneur du formulaire de connexion */
+.login-box {
+    background: #fff; /* Fond blanc */
+    padding: 20px; /* Padding interne de 20px */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour du conteneur */
+    text-align: center; /* Centre le texte à l'intérieur */
+    width: 300px; /* Largeur fixe du conteneur */
+}
+
+/* Style pour le titre du formulaire */
+.login-box h2 {
+    margin: 0 0 20px; /* Marge en bas de 20px */
+    padding: 0; /* Pas de padding */
+    font-size: 24px; /* Taille de la police */
+    color: #000; /* Couleur du texte noir */
+}
+
+/* Style pour chaque bloc de champ de saisie */
+.user-box {
+    margin-bottom: 20px; /* Marge en bas de 20px pour espacer les champs */
+    position: relative; /* Position relative pour les éléments internes */
+}
+
+/* Style pour les étiquettes des champs de saisie */
+.user-box label {
+    margin-bottom: 10px; /* Marge en bas de 10px */
+    font-size: 14px; /* Taille de la police */
+    color: #000; /* Couleur du texte noir */
+    display: block; /* Affiche le label comme un bloc */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+/* Style pour les champs de saisie */
+.user-box input {
+    width: 100%; /* Largeur de 100% du conteneur parent */
+    padding: 10px; /* Padding interne de 10px */
+    background: #f0f0f0; /* Fond gris clair */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bords arrondis */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la taille totale */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Style pour le bouton de soumission */
+button {
+    background: #ff0000; /* Fond rouge */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Padding interne */
+    color: #fff; /* Couleur du texte blanche */
+    font-size: 16px; /* Taille de la police */
+    border-radius: 5px; /* Bords arrondis */
+    cursor: pointer; /* Curseur de type pointeur pour indiquer que c'est cliquable */
+    transition: background 0.3s ease; /* Transition douce pour le changement de fond */
+    width: 100%; /* Largeur de 100% du conteneur parent */
+}
+
+/* Change la couleur de fond du bouton lorsqu'il est survolé */
+button:hover {
+    background: #cc0000; /* Fond rouge foncé */
+}
